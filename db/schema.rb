@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2021_04_12_011823) do
   create_table "posts", force: :cascade do |t|
     t.integer "song_id", null: false
     t.integer "user_id", null: false
+    t.string "caption"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["song_id"], name: "index_posts_on_song_id"
